@@ -11,5 +11,7 @@ variable "tags" {
 }
 
 variable "webapplocs" {
-    default = [ "franwesteurope" ,"cecentral", "canadaeast", "brazilsouth", "japanwest" ]
+    description = "List of locations for web apps"
+    type        = "list"
+    default     = []
 }
